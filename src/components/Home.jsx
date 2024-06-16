@@ -1,6 +1,7 @@
 import { useState , useEffect } from "react"
 import React from 'react';
 import Card from "./Card";
+import './homemian.css';
 
 const Home = () => {
   
@@ -13,6 +14,7 @@ const Home = () => {
     data = resData.map((products)=>{
       return(
         <Card
+          id={products.id}
           title={products.title}
           image={products.image}
           price={products.price}
@@ -27,9 +29,9 @@ const Home = () => {
   },[]);
 
   return (
-    <>
-      <Card/>
-    </>
+    <div className="main-div">
+      {intity}
+    </div>
   )
 }
 export default Home;

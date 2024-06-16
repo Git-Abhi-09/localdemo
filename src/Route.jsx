@@ -4,6 +4,7 @@ import About from './components/About';
 import Info from './components/Info';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
+import SingleProduct from './components/SingleProduct';
 import { createBrowserRouter , RouterProvider } from 'react-router-dom';
 
 const Route = () => {
@@ -23,6 +24,10 @@ const Route = () => {
         {
           path:'/contact',
           element:<><Navbar/><Contact/></>
+        },
+        {
+          path:'/products/:id',
+          element:<><Navbar/><SingleProduct/></>
         }
       ]);
   return (

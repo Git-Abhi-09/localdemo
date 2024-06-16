@@ -1,11 +1,4 @@
-.main{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    height: vh;
-    width: vw;
-  }
+
   .card {
     margin: 20px;
     padding: 20px;

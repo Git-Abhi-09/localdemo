@@ -9,7 +9,7 @@ const Card = (props) => {
               <img src={props.image} alt="Card image" height="400" width="250" className="card-image"></img>
               <h2 className="card-title">{props.title}</h2>
               <p className="card-text">{props.price}</p>
-              <a href={`/${props.id}`}><button className="card-button">Read More</button></a>
+              <a href={`/products/${props.id}`}><button className="card-button">Read More</button></a>
           </div>
         </div>
     </>
